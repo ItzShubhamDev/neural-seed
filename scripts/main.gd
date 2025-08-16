@@ -45,18 +45,19 @@ func _check_level_up():
 			level += 1
 			exp_point = 0
 			budget += 50
-			_update_nextwork_visual()
 			$NeuralNetwork.scale = Vector2(0.2 + 0.05 * level, 0.2 + 0.05 * level)
 			$Level.text = "Level " + str(level)
 			$SizeProgress.value = 100 * level / 6 
 			$ConnectionsProgress.value = 100 * pow(level / 6.0, 1.5)
 			$ActivityProgress.value = 100 * sin(level / 6.0 * PI / 2) 
+	_update_nextwork_visual()
 		
 func _update_nextwork_visual():
 	if (!has_node("NeuralNetwork") || !has_node("Main") || !has_node("Line2D3")):
 		return
 	if evilness > 0.5:
-		$NeuralNetwork/Sprite2D.texture = level_images[5 + level]
+		if level >= 1:
+			$NeuralNetwork/Sprite2D.texture = level_images[5 + level]
 		$Main.default_color = Color(Global.colors[3])
 		$Line2D3.default_color = Color(Global.colors[5])
 	else:
