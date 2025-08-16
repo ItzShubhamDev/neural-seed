@@ -1,0 +1,235 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwwpsbvd3uruw"]
+
+[ext_resource type="FontFile" uid="uid://od1373r6sl1" path="res://assets/fonts/BoldPixels1.4.ttf" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://60taf2d0m5c8" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dlxeeut7vhc25" path="res://scenes/unevolved.tscn" id="2_0wfyh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
+bg_color = Color(0.180392, 0.415686, 0.831373, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sugp2"]
+bg_color = Color(0.529412, 0.662745, 0.878431, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
+bg_color = Color(0.812721, 0.871443, 0.948088, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
+bg_color = Color(0.529412, 0.662745, 0.878431, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sugp2")
+
+[node name="TrainButton" type="Button" parent="."]
+offset_left = 238.0
+offset_top = 503.0
+offset_right = 615.0
+offset_bottom = 556.0
+theme_override_fonts/font = ExtResource("1_o5qli")
+theme_override_font_sizes/font_size = 50
+text = "CLICK TO TRAIN"
+flat = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 1.0
+offset_top = 11.0
+offset_right = 1151.0
+offset_bottom = 119.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 100
+text = "NEURAL SEED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(51, 115.53)
+scale = Vector2(0.91225, 0.705973)
+points = PackedVector2Array(11, 5, 11, 638, 1141, 638, 1141, 325.898, 1141, 10, 10, 10)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 91.0
+offset_top = 139.0
+offset_right = 243.0
+offset_bottom = 184.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 50
+text = "TRAIN"
+horizontal_alignment = 1
+
+[node name="Line2D3" type="Line2D" parent="."]
+position = Vector2(-83.2608, -3.05176e-05)
+scale = Vector2(1.14269, 1)
+points = PackedVector2Array(989, 416, 708, 416, 708, 548, 998, 548, 998, 199, 155, 199, 155, 494, 701, 494)
+width = 6.0
+default_color = Color(0.356863, 0.388235, 0.439216, 1)
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+offset_left = 728.0
+offset_top = 425.0
+offset_right = 1052.0
+offset_bottom = 470.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 40
+text = "MONITOR"
+horizontal_alignment = 1
+
+[node name="ExpPoints" type="RichTextLabel" parent="."]
+offset_left = 730.0
+offset_top = 462.0
+offset_right = 1053.0
+offset_bottom = 491.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "Experience: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Evilness" type="RichTextLabel" parent="."]
+offset_left = 729.0
+offset_top = 490.0
+offset_right = 1053.0
+offset_bottom = 519.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "Evilness: 0"
+horizontal_alignment = 1
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+offset_left = 744.0
+offset_top = 212.0
+offset_right = 1032.0
+offset_bottom = 257.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 40
+text = "SKILLS"
+horizontal_alignment = 1
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+offset_left = 715.0
+offset_top = 268.0
+offset_right = 860.0
+offset_bottom = 297.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "SIZE"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="."]
+offset_left = 688.0
+offset_top = 310.0
+offset_right = 862.0
+offset_bottom = 339.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "CONNECTIONS"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="."]
+offset_left = 716.0
+offset_top = 354.0
+offset_right = 861.0
+offset_bottom = 383.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "ACTIVITY"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="NeuralNetwork" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(350, 344)
+scale = Vector2(0.2, 0.2)
+
+[node name="Main" type="Line2D" parent="."]
+position = Vector2(-6, -2.93875)
+scale = Vector2(1.01043, 1.01225)
+points = PackedVector2Array(11, 5, 11, 638, 1141, 638, 1141, 10, 10, 10)
+default_color = Color(0.180392, 0.415686, 0.831373, 1)
+
+[node name="SizeProgress" type="ProgressBar" parent="."]
+offset_left = 876.0
+offset_top = 268.0
+offset_right = 1043.0
+offset_bottom = 295.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0wfyh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_sugp2")
+show_percentage = false
+
+[node name="ConnectionsProgress" type="ProgressBar" parent="."]
+offset_left = 876.0
+offset_top = 311.0
+offset_right = 1043.0
+offset_bottom = 338.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0wfyh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jyhfs")
+rounded = true
+show_percentage = false
+
+[node name="ActivityProgress" type="ProgressBar" parent="."]
+offset_left = 875.0
+offset_top = 355.0
+offset_right = 1042.0
+offset_bottom = 382.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0wfyh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tbgi4")
+rounded = true
+show_percentage = false
+
+[node name="ExpProgress" type="ProgressBar" parent="."]
+offset_left = 605.0
+offset_top = 140.0
+offset_right = 852.0
+offset_bottom = 181.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0wfyh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jyhfs")
+show_percentage = false
+
+[node name="Level" type="RichTextLabel" parent="."]
+offset_left = 863.0
+offset_top = 139.0
+offset_right = 1059.0
+offset_bottom = 184.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 50
+text = "LEVEL 0"
+horizontal_alignment = 1
+
+[node name="Balance" type="RichTextLabel" parent="."]
+offset_left = 729.0
+offset_top = 516.0
+offset_right = 1053.0
+offset_bottom = 545.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 25
+text = "Balance: 1000"
+horizontal_alignment = 1
+
+[node name="Notification" type="RichTextLabel" parent="."]
+offset_left = 58.0
+offset_top = 581.0
+offset_right = 1095.0
+offset_bottom = 626.0
+theme_override_fonts/normal_font = ExtResource("1_o5qli")
+theme_override_font_sizes/normal_font_size = 50
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="TrainButton" to="." method="_on_train_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

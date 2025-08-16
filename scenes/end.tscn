@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsjy1c10ocd61"]
+
+[ext_resource type="Script" uid="uid://bgbtbda35fa8w" path="res://scripts/end.gd" id="1_3d26k"]
+[ext_resource type="FontFile" uid="uid://od1373r6sl1" path="res://assets/fonts/BoldPixels1.4.ttf" id="1_mwn6m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_3d26k")
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2(-6, -4.92343)
+scale = Vector2(1.01043, 1.01531)
+points = PackedVector2Array(11, 5, 11, 638, 1141, 638, 1141, 10, 10, 10)
+default_color = Color(0.0431373, 0.00784314, 0, 1)
+
+[node name="Title" type="RichTextLabel" parent="."]
+offset_left = -3.0
+offset_top = 198.0
+offset_right = 1147.0
+offset_bottom = 306.0
+theme_override_fonts/normal_font = ExtResource("1_mwn6m")
+theme_override_font_sizes/normal_font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 469.0
+offset_top = 305.0
+offset_right = 686.0
+offset_bottom = 364.0
+theme_override_fonts/font = ExtResource("1_mwn6m")
+theme_override_font_sizes/font_size = 50
+flat = true
+
+[node name="End" type="Button" parent="."]
+offset_left = 470.0
+offset_top = 372.0
+offset_right = 686.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("1_mwn6m")
+theme_override_font_sizes/font_size = 50
+flat = true
+
+[node name="Reason" type="RichTextLabel" parent="."]
+offset_top = 454.0
+offset_right = 1150.0
+offset_bottom = 513.0
+theme_override_fonts/normal_font = ExtResource("1_mwn6m")
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="End" to="." method="_on_end_pressed"]
